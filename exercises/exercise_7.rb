@@ -33,7 +33,7 @@ class Employee < ActiveRecord::Base
   validates :store_id, presence: true
 end
 
-puts "enter store name:"
-store_name = gets.chomp
-store = Store.create(name: store_name, annual_revenue: 100000, mens_apparel: false, womens_apparel: false)
-puts store.errors.messages
+# puts "enter store name:"
+# store_name = gets.chomp
+# store = Store.create(name: store_name, annual_revenue: 100000, mens_apparel: false, womens_apparel: false)
+# puts store.errors.messages
