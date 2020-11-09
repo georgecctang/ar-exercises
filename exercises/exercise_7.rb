@@ -14,8 +14,8 @@ puts "----------"
 class Store < ActiveRecord::Base
   validates :name, length: { minimum: 3}
   validates :annual_revenue, numericality: {only_integer: true, greater_than_or_equal_to: 0}
-  validates :mens_apparel, inclusion: { in: [true, false] }
-  validates :womens_apparel, inclusion: { in: [true, false] }
+  # validates :mens_apparel, inclusion: { in: [true, false] }
+  # validates :womens_apparel, inclusion: { in: [true, false] }
   validate :mens_apparel_and_womens_apparel_cannot_be_both_false
 
   private
